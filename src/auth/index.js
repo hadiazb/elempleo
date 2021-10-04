@@ -18,6 +18,7 @@ function getToken(auth) {
   }
 
   if (auth.indexOf('Bearer ') === -1) {
+    console.log(auth);
     throw error('Formato invalido', 401);
   }
 
@@ -38,6 +39,7 @@ function decodeHeader(req) {
 const check = {
   own(req, owner) {
     const decoded = decodeHeader(req);
+    // console.log(decoded.id, owner);
 
     if (decoded.id !== owner) {
       throw error('No puedes hacer esto', 401);
