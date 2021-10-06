@@ -18,7 +18,6 @@ function getToken(auth) {
   }
 
   if (auth.indexOf('Bearer ') === -1) {
-    console.log(auth);
     throw error('Formato invalido', 401);
   }
 

@@ -2,8 +2,8 @@ const auth = require('../../../auth/index');
 
 module.exports = function checkAuth(action) {
   function middleware(req, res, next) {
-    const owner = req.params.id;
-    console.log(req.params);
+    const owner = req.body.id;
+    // console.log(req.params);
     switch (action) {
       case 'list':
         auth.check.own(req, owner);
