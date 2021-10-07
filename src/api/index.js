@@ -11,12 +11,14 @@ if (config.app.env === 'development') {
     {
       user: `http://${config.app.serverHostDevelopment}:${config.app.port}/users`,
       auth: `http://${config.app.serverHostDevelopment}:${config.app.port}/auth`,
+      banner: `http://${config.app.serverHostDevelopment}:${config.app.port}/banner`,
     },
   ];
 } else {
   message = [
     {
       user: `${config.app.serverHostProduction}/users`,
+      banner: `${config.app.serverHostProduction}/banner`,
     },
   ];
 }

@@ -7,13 +7,14 @@ const config = require('./config/index');
 const errors = require('./network/errors');
 const router = require('./network/routes');
 const sequelize = require('./store/mysql');
+const setCache = require('./utils/cache');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 router(app);
-
+// app.use(setCache);
 app.use(errors);
 
 app.listen(config.app.port, () => {
