@@ -12,6 +12,7 @@ if (config.app.env === 'development') {
       user: `http://${config.app.serverHostDevelopment}:${config.app.port}/users`,
       auth: `http://${config.app.serverHostDevelopment}:${config.app.port}/auth`,
       banner: `http://${config.app.serverHostDevelopment}:${config.app.port}/banner`,
+      universities: `http://${config.app.serverHostDevelopment}:${config.app.port}/universities`,
     },
   ];
 } else {
@@ -19,6 +20,7 @@ if (config.app.env === 'development') {
     {
       user: `${config.app.serverHostProduction}/users`,
       banner: `${config.app.serverHostProduction}/banner`,
+      universities: `${config.app.serverHostProduction}/universities`,
     },
   ];
 }
