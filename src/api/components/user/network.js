@@ -54,12 +54,12 @@ const update = (req, res, next) => {
     })
     .catch(next);
 
-  auth
-    .update(req.body, req.params.id)
-    .then((auth) => {
-      response.success(req, res, auth, 200, 'User Update Ok');
-    })
-    .catch(next);
+  // auth
+  //   .update(req.body, req.params.id)
+  //   .then((auth) => {
+  //     response.success(req, res, auth, 200, 'User Update Ok');
+  //   })
+  //   .catch(next);
 };
 
 const remove = (req, res, next) => {

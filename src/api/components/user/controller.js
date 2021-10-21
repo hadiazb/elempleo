@@ -13,9 +13,16 @@ const insert = (body) => User.create({
   username: body.username,
   email: body.email,
   age: body.age,
-  rol: body.rol,
+  role: body.role,
   phone: body.phone,
-  numberReports: body.numberReports,
+  website: body.website,
+  avatar: body.avatar,
+  picture: body.picture,
+  company: body.company,
+  address: body.address,
+  city: body.city,
+  country: body.country,
+  zipcode: body.zipcode,
 });
 
 const update = (body, id) => User.update(
@@ -25,9 +32,16 @@ const update = (body, id) => User.update(
     username: body.username,
     email: body.email,
     age: body.age,
-    rol: body.rol,
+    role: body.role,
     phone: body.phone,
-    numberReports: body.numberReports,
+    website: body.website,
+    avatar: body.avatar,
+    picture: body.picture,
+    company: body.company,
+    address: body.address,
+    city: body.city,
+    country: body.country,
+    zipcode: body.zipcode,
   },
   {
     where: {

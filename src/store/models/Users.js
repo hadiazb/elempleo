@@ -8,7 +8,7 @@ User.init(
     name: {
       type: DataTypes.STRING,
       allowNull: true,
-      defaultValue: '',
+      defaultValue: null,
     },
     username: {
       type: DataTypes.STRING,
@@ -22,21 +22,57 @@ User.init(
     age: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      defaultValue: 0,
+      defaultValue: null,
     },
     role: {
       // 0: User, 1: Admin, 2: Sleep
       type: DataTypes.INTEGER,
       defaultValue: 0,
     },
+    website: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
     phone: {
       type: DataTypes.STRING,
       allowNull: true,
       defaultValue: '00 0 000 000 0000',
     },
-    numberReports: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0,
+    avatar: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    picture: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    company: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    country: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
+    },
+    zipcode: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: null,
     },
   },
   { sequelize, modelName: 'user' },

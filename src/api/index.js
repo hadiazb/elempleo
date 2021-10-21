@@ -13,6 +13,7 @@ if (config.app.env === 'development') {
       auth: `http://${config.app.serverHostDevelopment}:${config.app.port}/auth`,
       banner: `http://${config.app.serverHostDevelopment}:${config.app.port}/banner`,
       universities: `http://${config.app.serverHostDevelopment}:${config.app.port}/universities`,
+      config: `http://${config.app.serverHostDevelopment}:${config.app.port}/config`,
     },
   ];
 } else {
