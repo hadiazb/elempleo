@@ -1,10 +1,10 @@
 {
-  "name": "api-refactory-login",
+  "name": "elempleo-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=app:* nodemon  src/server",
+    "dev": "nodemon  src/server",
     "start": "node  src/server",
     "lint": "eslint '*/**/*.js' --quiet --fix"
   },
